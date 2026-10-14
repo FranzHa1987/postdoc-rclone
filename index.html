@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Postdoc-rclone ist eine private Einrichtung zur Synchronisierung eines lokalen Postdoc-Ordners mit Google Drive.">
+  <title>Postdoc-rclone · Private Drive-Synchronisierung</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #203238; background: #f3f5f3; line-height: 1.65; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .wrap { max-width: 800px; margin: auto; padding: 36px 24px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-bottom: 24px; border-bottom: 1px solid #cbd5ce; }
+    .brand { color: #203238; font-weight: 750; text-decoration: none; font-size: 1.1rem; }
+    nav { display: flex; gap: 22px; }
+    a { color: #17614d; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #c67430; outline-offset: 5px; }
+    main { padding: 48px 0 24px; }
+    .eyebrow { color: #17614d; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.12; letter-spacing: -.035em; margin: 16px 0 24px; }
+    h2 { font-size: 1.2rem; margin-top: 32px; }
+    p { margin: 0 0 18px; }
+    .lead { font-size: 1.15rem; }
+    .note { border-left: 3px solid #23735c; background: #e5eee7; padding: 20px 24px; margin: 32px 0; }
+    .note p:last-child { margin-bottom: 0; }
+    footer { border-top: 1px solid #cbd5ce; margin-top: 24px; padding-top: 20px; font-size: .85rem; color: #50605a; }
+    @media (max-width: 480px) { .wrap { padding: 24px 20px; } main { padding-top: 32px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html">Postdoc-rclone</a>
+      <nav aria-label="Hauptnavigation"><a href="index.html" aria-current="page">Startseite</a><a href="privacy.html">Datenschutz</a></nav>
+    </header>
+    <main>
+      <p class="eyebrow">Private Anwendung</p>
+      <h1>Postdoc-rclone</h1>
+      <p class="lead">Synchronisierung eines lokalen Postdoc-Ordners mit Google Drive über das auf dem eigenen Rechner ausgeführte Programm rclone.</p>
+      <h2>Zweck und Nutzung</h2>
+      <p>Diese Einrichtung wird von Franz Hallwirth für sein eigenes Google-Konto verwendet. Sie dient dazu, Dateien zwischen einem ausgewählten Google-Drive-Ordner und dem lokalen Rechner abzugleichen. Der Abgleich kann Dateien herunterladen, hochladen, aktualisieren und entsprechend der konfigurierten Synchronisation löschen.</p>
+      <p>Die Anmeldung erfolgt über Google OAuth. Der Betreiber erteilt rclone dabei die erforderlichen Berechtigungen für Google Drive. Die Verbindung wird anschließend durch rclone auf seinem Rechner verwendet.</p>
+      <div class="note">
+        <p>Diese Website beschreibt die Anwendung. Die Synchronisierung selbst findet zwischen dem lokalen Rechner und Google Drive statt. Diese Website enthält keine Anmeldung und verarbeitet keine Drive-Dateien.</p>
+      </div>
+      <h2>Datenschutz und Kontakt</h2>
+      <p>Die <a href="privacy.html">Datenschutzerklärung für Postdoc-rclone</a> erläutert Datenzugriff, Speicherung, Sicherungskopien und den Widerruf der Verbindung.</p>
+      <p>Betreiber: Franz Hallwirth. Für Fragen zur Anwendung gilt die im Google-OAuth-Zustimmungsbildschirm angegebene Support-E-Mail-Adresse.</p>
+      <p>Informationen zur verwendeten Software: <a href="https://rclone.org/">rclone.org</a>.</p>
+    </main>
+    <footer>Postdoc-rclone · Stand: 14. Oktober 2026</footer>
+  </div>
+</body>
+</html>
